@@ -1,15 +1,13 @@
 package com.example.demo.servicess;
 
-
-import java.util.List;
-import java.util.Optional;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.example.demo.exceptions.EmployeenotFoundException;
 import com.example.demo.model.Employee;
 import com.example.demo.repo.MyRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -22,12 +20,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         return repo.findAll();
     }
 
-//    @Override
-//    public Optional<Employee> getEmployeeById(int id) {
-//        return repo.findById(id);
-//    }
-    
-    
     @Override
     public Optional<Employee> getEmployeeById(int id) {
         return Optional.ofNullable(
@@ -36,25 +28,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         );
     }
 
-    
-    @Override
-    public String deleteEmployeeById(int id) {
-        if (repo.existsById(id)) {
-            repo.deleteById(id);
-            return "Employee Deleted Successfully!";
-        } else {
-            throw new EmployeenotFoundException("Cannot delete — Employee not found with ID: " + id);
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     @Override
     public String addEmployee(Employee emp) {
         repo.save(emp);
@@ -73,15 +46,19 @@ public class EmployeeServiceImpl implements EmployeeService {
             repo.save(emp);
             return "Employee Updated Successfully!";
         } else {
-            return "Employee Not Found!";
+            throw new EmployeenotFoundException("Cannot update — Employee not found with ID: " + id);
         }
     }
 
-//    @Override
-//    public String deleteEmployeeById(int id) {
-//        repo.deleteById(id);
-//        return "Employee Deleted Successfully!";
-//    }
+    @Override
+    public String deleteEmployeeById(int id) {
+        if (repo.existsById(id)) {
+            repo.deleteById(id);
+            return "Employee Deleted Successfully!";
+        } else {
+            throw new EmployeenotFoundException("Cannot delete — Employee not found with ID: " + id);
+        }
+    }
 
     @Override
     public String deleteAllEmployees() {

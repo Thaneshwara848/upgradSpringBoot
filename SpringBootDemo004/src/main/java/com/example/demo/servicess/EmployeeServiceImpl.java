@@ -1,0 +1,62 @@
+package com.example.demo.servicess;
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.Employee;
+import com.example.demo.repo.MyRepo;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+    @Autowired
+    private MyRepo repo;
+
+    @Override
+    public List<Employee> getAllEmployees() {
+        return repo.findAll();
+    }
+
+    @Override
+    public Optional<Employee> getEmployeeById(int id) {
+        return repo.findById(id);
+    }
+
+    @Override
+    public String addEmployee(Employee emp) {
+        repo.save(emp);
+        return "Employee Added Successfully!";
+    }
+
+    @Override
+    public String updateEmployee(int id, Employee updatedEmp) {
+        Optional<Employee> existing = repo.findById(id);
+        if (existing.isPresent()) {
+            Employee emp = existing.get();
+            emp.setName(updatedEmp.getName());
+            emp.setAge(updatedEmp.getAge());
+            emp.setSalary(updatedEmp.getSalary());
+            emp.setDesig(updatedEmp.getDesig());
+            repo.save(emp);
+            return "Employee Updated Successfully!";
+        } else {
+            return "Employee Not Found!";
+        }
+    }
+
+    @Override
+    public String deleteEmployeeById(int id) {
+        repo.deleteById(id);
+        return "Employee Deleted Successfully!";
+    }
+
+    @Override
+    public String deleteAllEmployees() {
+        repo.deleteAll();
+        return "All Employees Deleted Successfully!";
+    }
+}

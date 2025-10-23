@@ -2258,3 +2258,144 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.ui 2 2 2025-10-23 19:18:29.486
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:16.523
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:16.524
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7d862de8[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=567)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:16.525
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:19.950
+!MESSAGE Boot LS startup time from start to initialized: 3424ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.172
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.fxdLYqBeisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.173
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.175
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.177
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.179
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.180
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.fxdLYqBe => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.195
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.199
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe SpringBootDemo003 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.200
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.210
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.215
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe SpringBootDemo004 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.216
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.217
+!MESSAGE classpath=18 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.218
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe Demo1 false 18
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.218
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.228
+!MESSAGE classpath=95 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.231
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe SpringBootDemo00 false 95
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.233
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.242
+!MESSAGE classpath=70 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.247
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe SpringBootDemo001 false 70
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.248
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.254
+!MESSAGE classpath=70 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.258
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe SpringBootDemo002 false 70
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.259
+!MESSAGE executing callback sts4.classpath.fxdLYqBe 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:25:20.902
+!MESSAGE executing callback sts4.classpath.fxdLYqBe SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-23 19:25:21.146
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:94)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:30:49.864
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:30:49.877
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:30:49.882
+!MESSAGE buffering callback sts4.classpath.fxdLYqBe SpringBootDemo004 false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:30:49.883
+!MESSAGE executing callback sts4.classpath.fxdLYqBe 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-23 19:30:49.920
+!MESSAGE executing callback sts4.classpath.fxdLYqBe SUCCESS [done]

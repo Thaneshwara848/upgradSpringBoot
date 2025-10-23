@@ -1,0 +1,15 @@
+package com.example.demo.servicess;
+
+public interface EmployeeService {
+	 List<Employee> getAllEmployees();
+
+	    Optional<Employee> getEmployeeById(int id);
+
+	    String addEmployee(Employee emp);
+
+	    String updateEmployee(int id, Employee emp);
+
+	    String deleteEmployeeById(int id);
+
+	    String deleteAllEmployees();
+	}

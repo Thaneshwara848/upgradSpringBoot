@@ -1,0 +1,425 @@
+		join with 229 
+
+
+
+Java Introduction
+- Overview of Java
+- JDK, JRE, JVM
+- Installing the JDK, Java IDEs
+- Writing First Code
+- Java Language Features
+
+program  : 
+
+int a = 100098765432345; 
+int b = 2000e4567898765; 
+---------------
+int result = a + b ;
+print(result );
+
+Binary lang 		(Machin level lang) 	--- 0 1 
+assembly level lang 
+cobal 
+pascal 
+potron 
+etc...!
+basic level lang (B lang )--------- High level 
+					C -------------- > C ++ ------------ >C# (paid )
+								------------> Java (open source)
+								------------> Python (open source )
+
+	java 					Python 
+	
+	High Security 				little bit less 
+	
+	Free 					free
+	
+	open source 				open source 
+		
+	bank 					permormace based App (AI /ML with Pythn : Robets )
+
+	Programing lang 
+		code -- compile--- run 		Code ------------ run 
+						Scripting lang  ( no comipl)
+
+
+
+
+	Overview of Java :
+
+	javac  ; 
+		notepad Demo1.java 
+		javac Demo1.java 
+		java Demo1 	
+	Simple 
+	Object orerinted  
+	Platform Indepedent 
+	Exception handling 
+	MultuThreing 
+	Dynimic Programing
+	Robesut 
+	etc...! 
+	
+
+Overview of Java
+- JDK, JRE, JVM
+- Installing the JDK, Java IDEs
+- Writing First Code
+- Java Language Features
+
+		JDK(java Development Kit ) :
+			we can develop and we can RUN also 
+			JDK = JRE + some lib 
+
+		JRE : java Run time Env 
+			we can not developet but we can only run 
+				
+		JVM : java virtual machin
+			 LinkageError occurred while loading main class Demo
+				 (verify the .class and load , and execute ) 
+		
+
+
+					1 byte = 8 bit 
+	DATA TYPE 		SIZE 			bit 
+
+	Byte 			1 byte 			8 bit 
+		
+	Short 			2 byte			16 bit  
+
+	int 			4 bytes 		32 bit 
+
+	long 			8 bytes 		64 bit 
+
+	float 			4 bytes 		32 bit 
+
+	double 			8 bytes 		64 bit 
+
+	char 			2 bytes 		16 bit 
+		
+	Boolean 		1 bit			1 bit / true / false 
+ 
+		1 byte 		 8 bit 
+					2 pow 8 = 256 
+					256 / 2 = 127/ 128 
+					-128 to + 127 
+					
+ID	:Short 	 
+NAME 	:String 
+AGE 	:0-100 :  byte 
+SALARY  : int  / double / float 
+DESIG   :String 
+phone  : long 
+
+
+
+Oops: 
+	Inheritance  
+			Acquiring the property from parent to child class
+				Advantage : 
+						reduce the no of line 
+						Increase  the app performance  
+						we can Re use 
+			// parent --- super ----- base class  
+			// child ---- sub --------- Derived class
+
+			Super : it is used to Access the parent properties 
+			Extends keywords : it used to call/ import  the parent propertie73
+			Single level 
+			Multi  level
+			Hierarchical
+			Hybrid 	: not support  : ambiguity/ Dimond  problem 
+			Multiple : not support : ambiguity/  problem
+			 
+	Polymorphism 	: 	same method but diff behavior 
+				Same method name  + diff parameter + 
+				it refers to the ability of a single method or class to take on multiple forms.
+
+		Types of Polymorphism
+			Compile-time Polymorphism 
+				(Method Overloading):is type of polymorphism is resolved during compile time.
+					Constructor over loading 
+					method over loading  
+			Runtime Polymorphism 
+				(Method Overriding):This type of polymorphism is resolved during runtime
+					Method over riding 
+
+		Access Modifier
+				Public  : anywhere ? same package  / same class / other class / other package 
+				private : only in same class 
+				protected : anywhere in same package  + sub class in other packages 
+				default   : anywhere in only same package 
+
+		NON Access Modifier : 
+					Static , final , Abstract 
+
+			// FINAL  keyword 				
+				// Variable	: we cant modify  
+				// method 	: we cant over ride 
+				// class 	: we can not inherit 
+
+			//Static  keyword 
+					// static : NO need of CREATING OBJ : directly  WE can access
+						how to Access ? 
+					// A.variable 
+					// A.methodname
+
+	Abstraction 		
+	Encapsulation 
+
+
+SQL 
+
+
+						JAVA 
+Basics : 
+		Data Types
+		Operators
+		Conditions 
+Oops : 
+		Inheritance 	: acquiring the property from Parent to Child 
+		Polymorphism 	: one methods can behave with Multiple ways 
+		Abstraction 	: hiding the Implementation just by showing the functionality  to End user
+		Encapsulation 	: hiding the data member into a single unit / single class 
+Access Modifier : 			
+		Public  : anywhere ? same package  / same class / other class / other package 
+		private : only in same class 
+		protected : anywhere in same package  + sub class in other packages 
+		Default   : anywhere in only same package 
+	
+Non Acc Modifier : keywords 
+		static 	: it belongs to class but not object ( no need to Create to obj , directly we can access  )
+		Final 	: it will restrict us  to access (var(no modification ) , method (no Overid)  , class (no inheriatnece)) 
+		Abstract : Hiding the implementation 
+
+
+		Super 	: it refers to parent class variable 
+		This :  refer to current class variable s
+		extends : it is use to Access the property from parent to child 
+		
+
+
+
+Abstract : 
+		Hiding the Implementation 
+			make a methods as Abstract 
+			How may Ways we can hide ? 
+				2 ways ? 
+					1 ) Using Abstract class 
+					2 ) Using INTERAFCE 
+
+
+	Class 					Abstract class 						Interface
+
+1 ) class {}					abstract class X{}					interface I {}
+
+2 ) can have only non abstract 			both abstract + non abstract 				will have only abstract methods 	
+
+3 ) A a = new A();OBJ ? yes 			No 							No 
+
+4) int a  ; 	 yes 				yes 							No (int a=100)
+
+5) A() {}  we can have constructor 		yes we can  have 					no  we cant have a constructor 
+
+6 ) 0 % security 				0 -100%							100% y ? bcz by default all abstract
+
+7 ) Multiple inheritance ?  no 			No 							yes 
+
+
+
+------------------------------------------------------------------------------------
+	== it will check the reference 
+	. equals : it will the check the content 	
+
+----------------------------------------------------------------------------------------------------
+	String 						String Buffer 					String Builder 
+
+	Im mutable 					Mutable 					later i'll explain 
+
+	we cant change the value 			we can change 
+	name ="Thanesh";				design ="Developer";
+							design.insert(0,"Sr");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single Threaded : 
+		Execute one task a time 
+
+MULTITHREADING : 
+
+		Multiple Thread can Execute at a time 
+		Multiple Thread can execute parallelly  
+		Multiple Thread can execute Concurrently  
+		
+	Ex : a web Server can handle the many clients request at a time 
+
+	Process : Restaurant 
+	Thread  : Waiter ( Each Waiter can server a different costumer at a time  )
+
+	Railway : 
+	Single Thread : only one train can go at a time (Single line )
+	Multiline  : many trains can  move in parallel 
+
+	how many ways we can achieve the Threading : 
+		1) By Extending the Thread class 
+			1) Each class much have to extends Thread class 
+			2) must have a call using the start methods 
+			3) Must have to Over ride the run methods 
+		2) By implementing the Runnable Interface 
+
+			1) Each class much have to implements the Runnable (Interface )
+			2) must have a call using the start methods 
+			3) Must have to Over ride the run methods 
+
+	Thread Life Cycle : 
+	many methods : 
+		Start , run , Suspend , Resume  , Stop , Wait , notify , Sleep , Thread.CurrentThread,
+		SetName ,getName , SetPriority ,getPriority
+		synchronized 
+
+
+
+COLLECTION CRUD LINK : https://paste.ubuntu.com/p/Xz76CftWym/
+Collections : 
+		List	: 
+			ArrayList 
+			LinkedList			
+			Vector
+			Stack   
+		Set 
+			hashSet
+			LinkedHashSet
+			TreeSet 
+		Map 	
+			hashTable
+			hashMap 
+			Linkedhashmap 
+			TreeMap
+
+
+		Stream API ---> 
+				Data Processing 
+it is not so easy to write the codes for even some common data processing operations 
+	such as filtering, sorting, matching, finding, mapping etc.
+	 That’s why Java API designers have come up with Stream API in Java 8 to implement 
+			more complex data processing logics with the least number of lines of code.
+
+			List<String> names = Arrays.asList("Thanesh","Geetha","Ashwani","Bharath","Thanesh");
+						Print
+						print the record whose name is Starting with G
+						print the record and convert to UpperCase 
+						print the record and convert to LowerCase
+						print only unique names  
+						remove the duplicate names 
+						sort the names 
+						sorting --- print top 3 records
+						skip top 2 
+						
+						
+						
+			
+JDBC : JAVA to Database 
+		5 Steps ) 
+				1 ) load the Driver 			: based on the database we have to load the driver 
+									: based on the we have to add the dependency from the maven Repo
+				2 ) Establish the Connection 		: we have to setup connection , by add the url , username , password 
+				3 ) Create the Statement 		: we have to pass the query's based o the Requirement 
+									: insert 	: PraperStatemt  stmt= con.prepareStatement("insert into emp vales(?,?,?)");
+									: delete 	: delete from emp where id = ? 
+									: update	: update emp set  salary = ? where id = ?
+									: Read		: ResultSet rs = stmt.executeQuery("Select * from employee");
+				4 ) Execute the Statement 		: Execute 
+				5 ) Close the connection 		: con.close();
+
+
+					
+
+
+Core java 
+
+	Oops  : Inheritance , Polymorphism , Abstraction , Encapsulation 
+	Access Modifiers  :  public , private , protected , default 
+	Non Access Modifiers : final  , static , abstract 
+	Exception handling  : both check exception & unchecked Exception , and custom exception also 
+	Collections : LIST , SET , MAP , 
+	JDBC 		: java to Data base Connectivity 
+Spring boot: 
+	Web 
+	Rest :(Web Services  ) : Rest full web services 
+		HTTP methods : APis Buildings 
+		@Get Mapping 
+		@Post mapping
+		@Delete Mapping
+		@Put Mapping
+		@PathVariable
+		@Requestand Response Body 
+						POST MAN tool : / it is APi testing tool 
+	Layard Architecture 
+			Controller	: it will communicate from the View and model  (MVC ) (M : model , V : view , C : Controller) 
+			Service		: it meant for the to write the business logic  	
+			Repo 		: it is used to communicate from the database 
+			model 		: based on the model ,it will create a schema of the table 
+			Exception 	: if something went wrong with the data m then we can raise exceptions 
+
+	Data JPA : find All, Find By Id  , Save , Delete, Delete All  , Update , etc...!many 
+			@Entity, @Id , @Column , @Table , @Tranisent , 
+	Lombok : to reduce the boiler plate code , @Data , @AllArgCOnt , @noArgCost, @toString,  
+	Swagger  : Browser APi Testing , and it will document all out APIs 
+	Spring Boot Exception Handler  : Goble Exception handler 
+	Validation  : its is used to validate the use input , if the data is correct then it will allow us to insert the record 
+			@NotBlank, @notNull, @Min, @Max, @pattern , @Size , @Email , @Valid, 
+	Mockito
+	JSP 
+	Security 
+	 
+	
+	
+	
+				before insert the record it will check and then if everything is correct then it will insert 
+	@Entity
+	@Table(name="Employees")
+	Employee
+		@Id : primary key 
+		@generatedvalue(strategy=AUTO)
+		ID 
+		
+		@Colume(name="username")
+		@notnull(message="name must be required")
+		@Pattern(reg="A-Za-z" , message="name is invalid ")
+		NAME 
+		
+		@notBlank
+		@Min(18, message ="Age must be more then 18 ")
+		@Max (60 , meassage ="Age must be less then 60")
+		Age 
+		
+		@Positive
+		@Min(25000, message ="salary must min 250000")
+		Salary
+		
+		@patternt 
+		design 
+
+
+
+
+
+
+
+
+
+
+

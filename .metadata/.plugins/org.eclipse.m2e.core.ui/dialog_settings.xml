@@ -6,6 +6,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\upgrad\Springcommunication3"/>
+			<item value="D:\upgrad\Springcommunication1"/>
 			<item value="D:\upgrad\SpringSecurityDemo8"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -14,14 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.Product;
 import com.example.demo.service.Service3;
-import com.example.demo.service.service2;
 
 
 @RestController
 public class controller2 {
 	
 	@Autowired
-	private service2 serv;
+	private Service3 serv;
 	
 	@GetMapping("/getProductS3")
 	public List<Product> FindAllModel() {
